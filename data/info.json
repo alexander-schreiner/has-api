@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Seobility",
+        "has_api": true,
+        "link": "https://www.seobility.net/static/api/documentation.html"
+    },
+    {
+        "name": "Skyscanner",
+        "has_api": true,
+        "link": "https://www.partners.skyscanner.net/affiliates/travel-apis"
+    },
+    {
+        "name": "YouTube",
+        "has_api": true,
+        "link": "https://developers.google.com/youtube/v3"
+    }
+]
