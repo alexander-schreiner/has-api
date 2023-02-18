@@ -233,5 +233,10 @@
         "name": "Railway",
         "has_api": true,
         "link": "https://docs.railway.app/reference/public-api"
+    },
+    {
+        "name": "ZeroSSL",
+        "has_api": true,
+        "link": "https://zerossl.com/documentation/api/"
     }
 ]
