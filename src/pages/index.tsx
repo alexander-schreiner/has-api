@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   let roundedClass = 'rounded-lg';
   const [result, setResult] = useState([]);
 
-  const inputHandler = (e) => {
+  const inputHandler = (e: any) => {
   const searchValue = String(e.target.value);
   setInput(searchValue);
   const lowerCaseSearchValue = searchValue.toLowerCase();
