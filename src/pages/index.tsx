@@ -1,6 +1,5 @@
 'use client';
 
-import { type NextPage } from "next";
 import { useState } from "react";
 import data from '../../data/info.json';
 
@@ -14,7 +13,7 @@ const Home = () => {
   let roundedClass = 'rounded-lg';
   const [result, setResult] = useState<Array<Element>>([]);
 
-  const inputHandler = (e: any) => {
+  const inputHandler = (e: { target: { value: string } }) => {
     const searchValue = String(e.target.value);
     setInput(searchValue);
     const lowerCaseSearchValue = searchValue.toLowerCase();
