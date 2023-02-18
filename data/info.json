@@ -228,5 +228,10 @@
         "name": "Cloudflare",
         "has_api": true,
         "link": "https://api.cloudflare.com/"
+    },
+    {
+        "name": "Railway",
+        "has_api": true,
+        "link": "https://docs.railway.app/reference/public-api"
     }
 ]
