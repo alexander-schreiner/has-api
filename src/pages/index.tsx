@@ -23,8 +23,9 @@ const Home: NextPage = () => {
 
     const results = [];
     matchingEntries.forEach((service, index) => {
+      console.log(service.name, service.has_api);
       results.push(<div key={index}>
-        {(service.has_api ? '✅' : '❌') + ' ' + service.name}
+        <a href={service.link ?? '#'}>{(service.has_api ? '✅' : '❌') + ' ' + service.name}</a>
       </div>
       );
     });
