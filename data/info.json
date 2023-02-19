@@ -2,241 +2,419 @@
     {
         "name": "Seobility",
         "has_api": true,
-        "link": "https://www.seobility.net/static/api/documentation.html"
+        "link": "https://www.seobility.net/static/api/documentation.html",
+        "topics": [
+            "seo",
+            "backlinks",
+            "rankings",
+            "site audit"
+        ]
     },
     {
         "name": "Skyscanner",
         "has_api": true,
-        "link": "https://www.partners.skyscanner.net/affiliates/travel-apis"
+        "link": "https://www.partners.skyscanner.net/affiliates/travel-apis",
+        "topics": [
+            "flights"
+        ]
     },
     {
         "name": "YouTube",
         "has_api": true,
-        "link": "https://developers.google.com/youtube/v3"
+        "link": "https://developers.google.com/youtube/v3",
+        "topics": [
+            "video"
+        ]
     },
     {
         "name": "USearch",
         "has_api": true,
-        "link": "https://usearch.com/web-search-api"
+        "link": "https://usearch.com/web-search-api",
+        "topics": [
+            "web search",
+            "search"
+        ]
     },
     {
         "name": "World Cities",
         "has_api": true,
-        "link": "https://rapidapi.com/andruxnet/api/world-cities"
+        "link": "https://rapidapi.com/andruxnet/api/world-cities",
+        "topics": [
+            "city",
+            "cities"
+        ]
     },
     {
         "name": "Zillow",
         "has_api": true,
-        "link": "https://www.zillowgroup.com/developers/"
+        "link": "https://www.zillowgroup.com/developers/",
+        "topics": [
+            "property",
+            "renting",
+            "apartment",
+            "house"
+        ]
     },
     {
         "name": "Google Search",
         "has_api": false,
-        "link": null
+        "link": null,
+        "topics": [
+            "web search",
+            "search"
+        ]
     },
     {
         "name": "Google Play",
         "has_api": true,
-        "link": "https://developers.google.com/android-publisher"
+        "link": "https://developers.google.com/android-publisher",
+        "topics": [
+            "google play"
+        ]
     },
     {
         "name": "Spotify",
         "has_api": true,
-        "link": "https://developer.spotify.com/documentation/web-api/"
+        "link": "https://developer.spotify.com/documentation/web-api/",
+        "topics": [
+            "music",
+            "tracks"
+        ]
     },
     {
         "name": "AWS (Amazon Web Services)",
         "has_api": true,
-        "link": "https://docs.aws.amazon.com/"
+        "link": "https://docs.aws.amazon.com/",
+        "topics": [
+            "cloud computing",
+            "aws"
+        ]
     },
     {
         "name": "AccuWeather",
         "has_api": true,
-        "link": "https://developer.accuweather.com/"
+        "link": "https://developer.accuweather.com/",
+        "topics": [
+            "weather"
+        ]
     },
     {
-        "name": " AliExpress",
+        "name": "AliExpress",
         "has_api": true,
-        "link": "https://developers.aliexpress.com/en/doc.htm?docId=121124&docType=1"
+        "link": "https://developers.aliexpress.com/en/doc.htm?docId=121124&docType=1",
+        "topics": [
+            "shopping",
+            "e-commerce"
+        ]
     },
     {
         "name": "Shazam",
         "has_api": true,
-        "link": "https://rapidapi.com/apidojo/api/shazam"
+        "link": "https://rapidapi.com/apidojo/api/shazam",
+        "topics": [
+            "music"
+        ]
     },
     {
         "name": "DuckDuckGo",
         "has_api": false,
-        "link": null
+        "link": null,
+        "topics": [
+            "web search",
+            "search"
+        ]
     },
     {
         "name": "Pinterest",
         "has_api": true,
-        "link": "https://developers.pinterest.com/"
+        "link": "https://developers.pinterest.com/",
+        "topics": [
+            "graphics",
+            "photo"
+        ]
     },
     {
         "name": "OpenWeatherMap",
         "has_api": true,
-        "link": "https://openweathermap.org/api"
+        "link": "https://openweathermap.org/api",
+        "topics": [
+            "weather"
+        ]
     },
     {
         "name": "Wikipedia",
         "has_api": true,
-        "link": "https://www.mediawiki.org/wiki/API"
+        "link": "https://www.mediawiki.org/wiki/API",
+        "topics": [
+            "information",
+            "encyclopedia"
+        ]
     },
     {
         "name": "Instagram",
         "has_api": true,
-        "link": "https://developers.facebook.com/docs/instagram-api/"
+        "link": "https://developers.facebook.com/docs/instagram-api/",
+        "topics": [
+            "lifestyle",
+            "video",
+            "reels",
+            "pictures"
+        ]
     },
     {
         "name": "Facebook",
         "has_api": true,
-        "link": "https://developers.facebook.com/docs/graph-api"
+        "link": "https://developers.facebook.com/docs/graph-api",
+        "topics": [
+            "video",
+            "photo"
+        ]
     },
     {
         "name": "TikTok",
         "has_api": false,
-        "link": null
+        "link": null,
+        "topics": [
+            "video",
+            "photo",
+            "lifestyle"
+        ]
     },
     {
         "name": "Twitter",
         "has_api": true,
-        "link": "https://developer.twitter.com/en/docs/twitter-api"
+        "link": "https://developer.twitter.com/en/docs/twitter-api",
+        "topics": [
+            "microblogging",
+            "news",
+            "community"
+        ]
     },
     {
         "name": "Reddit",
         "has_api": true,
-        "link": "https://www.reddit.com/dev/api/"
+        "link": "https://www.reddit.com/dev/api/",
+        "topics": [
+            "community",
+            "information"
+        ]
     },
     {
         "name": "GitHub",
         "has_api": true,
-        "link": "https://docs.github.com/en/rest"
+        "link": "https://docs.github.com/en/rest",
+        "topics": [
+            "code",
+            "ci/cd",
+            "open source"
+        ]
     },
     {
         "name": "Shopify",
         "has_api": true,
-        "link": "https://shopify.dev/docs/api"
+        "link": "https://shopify.dev/docs/api",
+        "topics": [
+            "music",
+            "podcast"
+        ]
     },
     {
         "name": "Shopware 6",
         "has_api": true,
-        "link": "https://developer.shopware.com/docs/"
+        "link": "https://developer.shopware.com/docs/",
+        "topics": [
+            "e-commerce"
+        ]
     },
     {
         "name": "Languagetool",
         "has_api": true,
-        "link": "https://languagetool.org/de/proofreading-apis"
+        "link": "https://languagetool.org/de/proofreading-apis",
+        "topics": [
+            "translation"
+        ]
     },
     {
         "name": "Telegram",
         "has_api": true,
-        "link": "https://core.telegram.org/"
+        "link": "https://core.telegram.org/",
+        "topics": [
+            "chat",
+            "messaging"
+        ]
     },
     {
         "name": "LastFM",
         "has_api": true,
-        "link": "https://www.last.fm/api"
+        "link": "https://www.last.fm/api",
+        "topics": [
+            "music"
+        ]
     },
     {
         "name": "Shopware 5",
         "has_api": true,
-        "link": "https://developers.shopware.com/developers-guide/rest-api/"
+        "link": "https://developers.shopware.com/developers-guide/rest-api/",
+        "topics": [
+            "e-commerce"
+        ]
     },
     {
         "name": "Billbee",
         "has_api": true,
-        "link": "https://www.billbee.io/hilfecenter/api"
+        "link": "https://www.billbee.io/hilfecenter/api",
+        "topics": [
+            "e-commerce"
+        ]
     },
     {
         "name": "Bitwarden",
         "has_api": true,
-        "link": "https://bitwarden.com/de-DE/help/public-api/"
+        "link": "https://bitwarden.com/de-DE/help/public-api/",
+        "topics": [
+            "password"
+        ]
     },
     {
         "name": "Discord",
         "has_api": true,
-        "link": "https://discord.com/developers/docs/intro"
+        "link": "https://discord.com/developers/docs/intro",
+        "topics": [
+            "community",
+            "audio"
+        ]
     },
     {
         "name": "Notion",
         "has_api": true,
-        "link": "https://developers.notion.com/"
+        "link": "https://developers.notion.com/",
+        "topics": [
+            "note"
+        ]
     },
     {
         "name": "Gmail",
         "has_api": true,
-        "link": "https://developers.google.com/gmail/api/guides"
+        "link": "https://developers.google.com/gmail/api/guides",
+        "topics": [
+            "mail"
+        ]
     },
     {
         "name": "Mailgun",
         "has_api": true,
-        "link": "https://documentation.mailgun.com/en/latest/api_reference.html"
+        "link": "https://documentation.mailgun.com/en/latest/api_reference.html",
+        "topics": [
+            "mail"
+        ]
     },
     {
         "name": "Packagist",
         "has_api": true,
-        "link": "https://packagist.org/apidoc"
+        "link": "https://packagist.org/apidoc",
+        "topics": [
+            "packages",
+            "php"
+        ]
     },
     {
         "name": "StackOverflow",
         "has_api": true,
-        "link": "https://api.stackexchange.com/"
+        "link": "https://api.stackexchange.com/",
+        "topics": [
+            "developer"
+        ]
     },
     {
         "name": "1Password",
         "has_api": true,
-        "link": "https://developer.1password.com/docs/connect/connect-api-reference/"
+        "link": "https://developer.1password.com/docs/connect/connect-api-reference/",
+        "topics": [
+            "password"
+        ]
     },
     {
         "name": "Google Calendar",
         "has_api": true,
-        "link": "https://developers.google.com/calendar/api/guides/overview"
+        "link": "https://developers.google.com/calendar/api/guides/overview",
+        "topics": [
+            "calendar"
+        ]
     },
     {
         "name": "Deutsche Bahn",
         "has_api": true,
-        "link": "https://data.deutschebahn.com/dataset.groups.apis.html"
+        "link": "https://data.deutschebahn.com/dataset.groups.apis.html",
+        "topics": [
+            "transportation"
+        ]
     },
     {
         "name": "Twilio",
         "has_api": true,
-        "link": "https://www.twilio.com/docs/usage/api"
+        "link": "https://www.twilio.com/docs/usage/api",
+        "topics": [
+            "messaging"
+        ]
     },
     {
         "name": "Medium",
         "has_api": true,
-        "link": "https://developers.medium.com/"
+        "link": "https://developers.medium.com/",
+        "topics": [
+            "blogging"
+        ]
     },
     {
         "name": "GitLab",
         "has_api": true,
-        "link": "https://docs.gitlab.com/ee/api/"
+        "link": "https://docs.gitlab.com/ee/api/",
+        "topics": [
+            "code",
+            "ci/cd"
+        ]
     },
     {
         "name": "Hetzner Cloud",
         "has_api": true,
-        "link": "https://docs.hetzner.cloud/"
+        "link": "https://docs.hetzner.cloud/",
+        "topics": [
+            "cloud computing"
+        ]
     },
     {
         "name": "Vercel",
         "has_api": true,
-        "link": "https://vercel.com/docs/rest-api"
+        "link": "https://vercel.com/docs/rest-api",
+        "topics": [
+            "cloud computing",
+            "next.js"
+        ]
     },
     {
         "name": "Cloudflare",
         "has_api": true,
-        "link": "https://api.cloudflare.com/"
+        "link": "https://api.cloudflare.com/",
+        "topics": [
+            "ddos",
+            "network"
+        ]
     },
     {
         "name": "Railway",
         "has_api": true,
-        "link": "https://docs.railway.app/reference/public-api"
+        "link": "https://docs.railway.app/reference/public-api",
+        "topics": [
+            "cloud computing"
+        ]
     },
     {
         "name": "ZeroSSL",
         "has_api": true,
-        "link": "https://zerossl.com/documentation/api/"
+        "link": "https://zerossl.com/documentation/api/",
+        "topics": [
+            "ssl",
+            "https"
+        ]
     }
 ]
