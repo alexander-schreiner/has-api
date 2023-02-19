@@ -13,15 +13,27 @@ const Home = () => {
   let roundedClass = 'rounded-lg';
   const [result, setResult] = useState<Array<Element>>([]);
 
-  const inputHandler = (e: { target: { value: string } }) => {
+  const getResults = (e: { target: { value: string } }) => {
     const searchValue = String(e.target.value);
     setInput(searchValue);
     const lowerCaseSearchValue = searchValue.toLowerCase();
 
     roundedClass = 'rounded-t-lg';
 
-    const matchingEntries = data.filter((service: { name: string }) => {
-      return service.name.toLowerCase().includes(lowerCaseSearchValue);
+    const matchingEntries = data.filter((service: { name: string, topics: Array<string> }): boolean => {
+      const serviceNameLowerCase = service.name.toLowerCase();
+
+      if (serviceNameLowerCase.includes(lowerCaseSearchValue)) {
+        return true;
+      }
+
+      const topics = service.topics;
+
+      if (topics.includes(lowerCaseSearchValue)) {
+        return true;
+      }
+
+      return false;
     });
 
     const elements: Array<Element> = [];
@@ -53,7 +65,7 @@ const Home = () => {
             </div>
             <input type="search" id="search"
               className={roundedClass + "block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300bg-gray-50 focus:ring-blue-500 focus:border-blue-500"}
-              placeholder="Search" value={input} onChange={inputHandler} required />
+              placeholder="Search" value={input} onChange={getResults} required />
             <button type="submit" className="text-white absolute right-2.5 bottom-2.5 bg-blue-700 
             hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-t-lg 
             text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
