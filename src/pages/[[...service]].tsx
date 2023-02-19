@@ -1,13 +1,25 @@
 'use client';
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import data from '../../data/info.json';
+import { useRouter } from "next/router";
+import type { Service, Element } from '../types/service';
 
-type Element = {
-  type: string
-};
+function getServiceElement(service: Service, index: number): Element {
+  return <div key={index}>
+    <a href={service.link ?? '#'}>
+      {
+        (service.has_api ? '✅' : '❌') + ' ' + service.name + ' '
+        + (service.has_api ? 'has an API' : 'does not have an API')
+      }
+    </a>
+  </div>
+}
 
 const Home = () => {
+
+  const router = useRouter()
+  const selectedService = router.query.service?.at(0)?.toLowerCase() ?? null;
 
   const [input, setInput] = useState('');
   let roundedClass = 'rounded-lg';
@@ -20,7 +32,7 @@ const Home = () => {
 
     roundedClass = 'rounded-t-lg';
 
-    const matchingEntries = data.filter((service: { name: string, topics: Array<string> }): boolean => {
+    const matchingEntries = data.filter((service: Service): boolean => {
       const serviceNameLowerCase = service.name.toLowerCase();
 
       if (serviceNameLowerCase.includes(lowerCaseSearchValue)) {
@@ -37,16 +49,27 @@ const Home = () => {
     });
 
     const elements: Array<Element> = [];
-    matchingEntries.forEach((service, index) => {
-
-      elements.push(<div key={index}>
-        <a href={service.link ?? '#'}>{(service.has_api ? '✅' : '❌') + ' ' + service.name}</a>
-      </div>
-      );
+    matchingEntries.forEach((service: Service, index) => {
+      elements.push(getServiceElement(service, index));
     });
 
     setResult(elements);
   };
+
+  useEffect(() => {
+    const selectedServiceMatchingEntries = data.filter((service: Service): boolean => {
+      if (selectedService !== null && service.name.toLowerCase() === selectedService) {
+        return true;
+      }
+      return false;
+    });
+
+    const selectedEntry: undefined | Service = selectedServiceMatchingEntries.at(0);
+
+    if (selectedEntry !== undefined) {
+      setResult([getServiceElement(selectedEntry, 0)]);
+    }
+  }, [selectedService]);
 
   return (
     <>
