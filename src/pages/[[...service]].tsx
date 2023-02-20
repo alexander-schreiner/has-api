@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import data from '../../data/info.json';
 import { useRouter } from "next/router";
 import type { Service, Element } from '../types/service';
+import Link from "next/link";
+import ButtonLink from "../components/button-link";
 
 function getServiceElement(service: Service, index: number): Element {
   return <div key={index}>
@@ -77,6 +79,9 @@ const Home = () => {
         <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
           Search if it has an <span className="text-[hsl(215,64%,55%)]">API</span>
         </h1>
+        <div>
+          <ButtonLink href="/sitemap">Sitemap</ButtonLink>
+        </div>
       </div>
 
       <div>
