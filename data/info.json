@@ -416,5 +416,14 @@
             "ssl",
             "https"
         ]
+    },
+    {
+        "name": "Netflix",
+        "has_api": false,
+        "link": null,
+        "topics": [
+            "video",
+            "streaming"
+        ]
     }
 ]
